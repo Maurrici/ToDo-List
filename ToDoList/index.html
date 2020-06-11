@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <title>App Todos</title>
+</head>
+<body class="bg-dark text-light">
+    <head>
+        <h1 class="display-4 text-center text-uppercase">App Todos</h1>
+    </head>
+
+    <div id="main" class="mt-5">
+        <section id="list">
+            <ul class="list-group bg-light text-primary w-75 m-auto"><li id="1" class="list-group-item bg-success text-dark"><span>sddsdsd</span><span class="badge badge-pill badge-success ml-3">Sem Pressa</span><a onclick="checkTodo(1)" class="float-right text-success"><i class="fas fa-check-circle"></i></a><a onclick="removeTodo(1)" class="float-right mr-4 text-danger"><i class="fas fa-trash"></i></a></li></ul>
+        </section>
+
+        <section>
+            <div id="insert" class="mt-5">
+                <div class="input-group w-50 m-auto">
+
+                    <input class="form-control" type="text" id="newToDo" placeholder="Adicionar um novo To Do">
+                    
+                    <div class="input-group-append">
+                        <select class="form-control" id="valorTodo">
+                            <option value="1">Sem Pressa</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Urgente</option>
+                        </select>
+                        <a class="btn btn-primary">Adicionar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="todos.js"></script>
+</body>
+</html>

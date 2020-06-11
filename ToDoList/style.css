@@ -1,0 +1,8 @@
+a:hover{
+    cursor: pointer;
+}
+
+ul a{
+    width: 30px;
+    text-align: center;
+}
